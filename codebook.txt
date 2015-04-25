@@ -1,0 +1,112 @@
+# Codebook
+There are two data set, "tidy_data.txt" and "tidy_data_with_average.txt".
+Use read.table("tidy_data.txt", header = TRUE) to read data.
+
+# Variables
+There are 68 variables in the dataset. The first two columns indicate the subject-activity pair.
+The rest columns are average of the variables respectively.
+
+# Variable lists
+1. subject
+2. activity
+3. tBodyAcc-mean()-X
+4. tBodyAcc-mean()-Y
+5. tBodyAcc-mean()-Z         
+6. tBodyAcc-std()-X          
+7. tBodyAcc-std()-Y          
+8. tBodyAcc-std()-Z          
+9. fBodyAccJerk-mean()-X      
+10. fBodyAccJerk-mean()-Y      
+11. fBodyAccJerk-mean()-Z      
+12. fBodyAccJerk-std()-X       
+13. fBodyAccJerk-std()-Y       
+14. fBodyAccJerk-std()-Z 
+15. tBodyAccMag-mean()         
+16. tBodyAccMag-std()
+17. fBodyBodyAccJerkMag-mean() 
+18. fBodyBodyAccJerkMag-std()
+19. fBodyBodyGyroJerkMag-mean()
+20. fBodyBodyGyroJerkMag-std()
+21. fBodyBodyGyroMag-mean()    
+22. fBodyBodyGyroMag-std()
+23. tBodyGyro-mean()-X         
+24. tBodyGyro-mean()-Y         
+25. tBodyGyro-mean()-Z         
+26. tBodyGyro-std()-X          
+27. tBodyGyro-std()-Y          
+28. tBodyGyro-std()-Z
+29. fBodyAcc-mean()-X          
+30. fBodyAcc-mean()-Y          
+31. fBodyAcc-mean()-Z          
+32. fBodyAcc-std()-X           
+33. fBodyAcc-std()-Y           
+34. fBodyAcc-std()-Z    
+35. tBodyAccJerk-mean()-X     
+36. tBodyAccJerk-mean()-Y    
+37. tBodyAccJerk-mean()-Z    
+38. tBodyAccJerk-std()-X      
+39. tBodyAccJerk-std()-Y      
+40. tBodyAccJerk-std()-Z       
+41. tBodyAccJerkMag-mean()     
+42. tBodyAccJerkMag-std() 
+43. fBodyAccMag-mean()         
+44. fBodyAccMag-std() 
+45. fBodyGyro-mean()-X         
+46. fBodyGyro-mean()-Y         
+47. fBodyGyro-mean()-Z         
+48. fBodyGyro-std()-X          
+49. fBodyGyro-std()-Y          
+50. fBodyGyro-std()-Z
+51. tBodyGyroJerk-mean()-X     
+52. tBodyGyroJerk-mean()-Y     
+53. tBodyGyroJerk-mean()-Z     
+54. tBodyGyroJerk-std()-X      
+55. tBodyGyroJerk-std()-Y      
+56. tBodyGyroJerk-std()-Z      
+57. tBodyGyroJerkMag-mean()    
+58. tBodyGyroJerkMag-std()
+59. tBodyGyroMag-mean()        
+60. tBodyGyroMag-std()   
+61. tGravityAcc-mean()-X      
+62. tGravityAcc-mean()-Y      
+63. tGravityAcc-mean()-Z     
+64. tGravityAcc-std()-X       
+65. tGravityAcc-std()-Y       
+66. tGravityAcc-std()-Z
+67. tGravityAccMag-mean()      
+68. tGravityAccMag-std()       
+
+# Data set features selection
+
+The features selected for this database come from the accelerometer and gyroscope 
+3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' 
+to denote time) were captured at a constant rate of 50 Hz. Then they were filtered 
+using a median filter and a 3rd order low pass Butterworth filter with a corner 
+frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then 
+separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) 
+using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived
+in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the
+magnitude of these three-dimensional signals were calculated using the Euclidean 
+norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals 
+producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, 
+fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+  
+e.g. tBodyAcc-XYZ
+  
+The set of variables that were estimated from these signals are: 
+
+e.g. mean(): Mean value ; std(): Standard deviation
+
+Additional vectors obtained by averaging the signals in a signal window sample. These 
+are used on the angle() variable:
+
+e.g. gravityMean ; tBodyAccMean
+
+The complete list of variables of each feature vector is available in 'features.txt'
+For more information, please see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.

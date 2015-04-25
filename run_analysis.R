@@ -58,7 +58,7 @@
     # Apply aggregate to get mean for each subset
     tidy_data_with_average <- aggregate(. ~ s_a, Data, mean, na.rm = TRUE)
     # Remove auxiliary column s_a
-    tidy_data_with_average <- mutate(tidy_data_with_average, s_a = NULL)
+    tidy_data_with_average <- select(tidy_data_with_average, -s_a)
     # Sort tidy_data_with_average with function arrange
     tidy_data_with_average <- arrange(tidy_data_with_average, activity, subject)
     # Read activity_labels into R
